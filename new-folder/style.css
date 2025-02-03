@@ -1,0 +1,95 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Основний контейнер */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.container:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Заголовок */
+h1 {
+    color: white;
+    margin-bottom: 15px;
+}
+
+/* Пошуковий блок */
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+#searchBox {
+    width: 70%;
+    padding: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+#searchBox::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#searchBox:focus {
+    border-color: #1abc9c;
+}
+
+/* Кнопка пошуку */
+#searchBtn {
+    padding: 12px 15px;
+    font-size: 16px;
+    color: white;
+    background: #1abc9c;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+#searchBtn:hover {
+    background: #16a085;
+}
+
+/* Карта */
+#map {
+    height: 600px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    margin-top: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.leaflet-control-attribution {
+    display: none !important;
+}
